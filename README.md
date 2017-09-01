@@ -1,4 +1,4 @@
-# @motorcycle/react-dom -- 0.0.0
+# @motorcycle/react-dom -- 1.0.0
 
 React integration for Motorcycle.ts
 
