@@ -1,5 +1,7 @@
 # @motorcycle/react-dom -- 1.0.0
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/motorcyclets/react-dom.svg)](https://greenkeeper.io/)
+
 React integration for Motorcycle.ts
 
 ## Get it
