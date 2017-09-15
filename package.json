@@ -25,7 +25,7 @@
   },
   "dependencies": {
     "167": "0.39.0",
-    "@motorcycle/dom": "16.0.0",
+    "@motorcycle/dom": "16.1.0",
     "@motorcycle/stream": "2.0.0",
     "@motorcycle/types": "2.0.0",
     "react": "15.6.1",
