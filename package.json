@@ -2,7 +2,7 @@
   "name": "@motorcycle/react-dom",
   "description": "React integration for Motorcycle.ts",
   "repository": "https://github.com/motorcyclets/react-dom",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "typings": "lib/index.d.ts",
