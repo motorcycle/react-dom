@@ -28,7 +28,7 @@
     "@motorcycle/dom": "16.1.0",
     "@motorcycle/stream": "2.1.0",
     "@motorcycle/types": "2.1.0",
-    "react": "15.6.1",
+    "react": "15.6.2",
     "react-dom": "15.6.1"
   },
   "lint-staged": {
