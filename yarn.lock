@@ -10,9 +10,9 @@
   version "0.39.0"
   resolved "https://registry.yarnpkg.com/167/-/167-0.39.0.tgz#79638b8019aa92cf500eb43f6ed04eef65f8d987"
 
-"167@0.41.0":
-  version "0.41.0"
-  resolved "https://registry.yarnpkg.com/167/-/167-0.41.0.tgz#1283d204aa2e39e45c51c3b13ef8d4afcc430e02"
+"167@0.42.0":
+  version "0.42.0"
+  resolved "https://registry.yarnpkg.com/167/-/167-0.42.0.tgz#872a7348b46215e70fd6a6a6f8a19745a379cdde"
 
 "167@^0.30.0":
   version "0.30.0"
@@ -117,8 +117,8 @@
     "@types/react" "*"
 
 "@types/react@*":
-  version "16.0.7"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.0.7.tgz#f85b6c33c988a1631e2f32fedae71ec6d9718a0d"
+  version "16.0.8"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.0.8.tgz#5a553a89dceddf73b9f9a2231501f322b3b97da6"
 
 "@types/react@16.0.5":
   version "16.0.5"
@@ -393,8 +393,8 @@ buffer-xor@^1.0.3:
   resolved "https://registry.yarnpkg.com/buffer-xor/-/buffer-xor-1.0.3.tgz#26e61ed1422fb70dd42e6e36729ed51d855fe8d9"
 
 buffer@^5.0.2:
-  version "5.0.7"
-  resolved "https://registry.yarnpkg.com/buffer/-/buffer-5.0.7.tgz#570a290b625cf2603290c1149223d27ccf04db97"
+  version "5.0.8"
+  resolved "https://registry.yarnpkg.com/buffer/-/buffer-5.0.8.tgz#84daa52e7cf2fa8ce4195bc5cf0f7809e0930b24"
   dependencies:
     base64-js "^1.0.2"
     ieee754 "^1.1.4"
