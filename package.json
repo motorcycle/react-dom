@@ -11,25 +11,28 @@
   "author": "Tylor Steinberger <tlsteinberger167@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "@motorcycle/test": "2.1.0",
-    "@typed/test": "2.5.0",
-    "@types/node": "8.0.28",
-    "@types/react": "16.0.5",
-    "@types/react-dom": "15.5.4",
+    "@motorcycle/test": "3.0.0",
+    "@typed/test": "6.5.0",
+    "@types/node": "9.4.7",
+    "@types/react": "16.0.40",
+    "@types/react-dom": "16.0.4",
     "dox": "0.9.0",
     "glob-expand": "0.2.1",
     "husky": "0.14.3",
-    "lint-staged": "4.1.3",
-    "prettier": "1.6.1",
-    "typescript": "2.5.2"
+    "lint-staged": "7.0.0",
+    "prettier": "1.11.1",
+    "typescript": "2.7.2"
+  },
+  "resolutions": {
+    "@types/react": "16.0.40"
   },
   "dependencies": {
-    "167": "0.39.0",
-    "@motorcycle/dom": "16.1.0",
-    "@motorcycle/stream": "2.1.0",
-    "@motorcycle/types": "2.1.0",
+    "167": "0.43.0",
+    "@motorcycle/dom": "17.0.0",
+    "@motorcycle/stream": "3.0.0",
+    "@motorcycle/types": "3.0.0",
     "react": "16.2.0",
-    "react-dom": "15.6.1"
+    "react-dom": "16.2.0"
   },
   "lint-staged": {
     "*.ts": [
@@ -47,7 +50,8 @@
     "preversion": "yarn test && yarn build",
     "release:major": "npm version major -m 'chore(package): v%s'",
     "release:minor": "npm version minor -m 'chore(package): v%s'",
-    "test:lint": "prettier --write --print-width 100 --tab-width 2 --no-semi --single-quote --trailing-comma es5 --parser typescript 'src/*.ts' 'src/**/*.ts'",
+    "test:lint":
+      "prettier --write --print-width 100 --tab-width 2 --no-semi --single-quote --trailing-comma es5 --parser typescript 'src/*.ts' 'src/**/*.ts'",
     "test": "typed-test 'src/*.test.ts' 'src/**/*.test.ts' --browser"
   }
 }
