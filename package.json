@@ -2,7 +2,7 @@
   "name": "@motorcycle/react-dom",
   "description": "React integration for Motorcycle.ts",
   "repository": "https://github.com/motorcyclets/react-dom",
-  "version": "2.1.0",
+  "version": "3.0.0",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "typings": "lib/index.d.ts",
@@ -50,8 +50,7 @@
     "preversion": "yarn test && yarn build",
     "release:major": "npm version major -m 'chore(package): v%s'",
     "release:minor": "npm version minor -m 'chore(package): v%s'",
-    "test:lint":
-      "prettier --write --print-width 100 --tab-width 2 --no-semi --single-quote --trailing-comma es5 --parser typescript 'src/*.ts' 'src/**/*.ts'",
+    "test:lint": "prettier --write --print-width 100 --tab-width 2 --no-semi --single-quote --trailing-comma es5 --parser typescript 'src/*.ts' 'src/**/*.ts'",
     "test": "typed-test 'src/*.test.ts' 'src/**/*.test.ts' --browser"
   }
 }
