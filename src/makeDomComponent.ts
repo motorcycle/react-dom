@@ -13,31 +13,31 @@ export type DomSources = Readonly<Record<'dom', DomSource<Element, Event>>>
 
 /**
  * Takes an element and returns a DOM component function.
- * 
+ *
  * @name makeDomComponent(element: Element): (sinks: DomSinks) => DomSources
  * @example
  * import { makeDomComponent, DomSources, DomSinks, VNode, div, button, h1 } from '@motorcycle/react-dom'
  * import { events, query } from '@motorcycle/dom'
  * import { run } from '@motorcycle/run'
- * 
+ *
  * const element = document.querySelector('#app')
- * 
+ *
  * if (!element) throw new Error('unable to find element')
- * 
+ *
  * run(UI, makeDomComponent(element))
- * 
+ *
  * function UI(sources: DomSources): DomSinks {
  *   const { dom } = sources
- * 
+ *
  *   const click$: Stream<Event> = events('click', query('button'))
- * 
+ *
  *   const amount$: Stream<number> = scan(x => x + 1, 0, click$)
- * 
+ *
  *   const view$: Stream<VNode> = map(view, amount$)
- * 
+ *
  *   return { view$ }
  * }
- * 
+ *
  * function view(amount: number) {
  *   return div([
  *     h1(`Clicked ${amount} times`),
@@ -48,8 +48,12 @@ export type DomSources = Readonly<Record<'dom', DomSource<Element, Event>>>
 export function makeDomComponent(element: Element) {
   return function Dom(sinks: DomSinks): DomSources {
     const view$ = hold(sinks.view$)
+    const component = (createElement(Container, { view$ }) as any) as React.DOMElement<
+      React.HTMLAttributes<Element>,
+      Element
+    >
 
-    render(createElement(Container, { view$ }), element)
+    render(component, element)
 
     const dom = createDomSource(hold(constant(element, view$)))
 
