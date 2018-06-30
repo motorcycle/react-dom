@@ -14,7 +14,7 @@
     "@motorcycle/test": "3.0.0",
     "@typed/test": "6.5.0",
     "@types/node": "9.4.7",
-    "@types/react": "16.0.40",
+    "@types/react": "16.4.6",
     "@types/react-dom": "16.0.4",
     "dox": "0.9.0",
     "glob-expand": "0.2.1",
@@ -24,14 +24,14 @@
     "typescript": "2.7.2"
   },
   "resolutions": {
-    "@types/react": "16.0.40"
+    "@types/react": "16.4.6"
   },
   "dependencies": {
     "167": "0.43.0",
     "@motorcycle/dom": "17.0.0",
     "@motorcycle/stream": "3.0.0",
     "@motorcycle/types": "3.0.0",
-    "react": "16.2.0",
+    "react": "16.4.1",
     "react-dom": "16.2.0"
   },
   "lint-staged": {
